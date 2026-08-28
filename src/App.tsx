@@ -224,12 +224,12 @@ export const App: React.FC = () => {
               onSubmitRecommendationForApproval={handleSubmitRecommendationForApproval}
             />
           )}
-
+{/* 
           {activeTab === 'procurement' && (
             <ProcurementSchedulerModule
               onPlanCharterForLot={handlePlanCharterForLot}
             />
-          )}
+          )} */}
 
           {activeTab === 'landed-cost' && (
             <LandedCostModule />

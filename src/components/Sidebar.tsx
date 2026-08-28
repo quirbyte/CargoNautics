@@ -18,7 +18,6 @@ export type ActiveTab =
   | 'overview'
   | 'forecast'
   | 'charter'
-  | 'procurement'
   | 'landed-cost'
   | 'map'
   | 'alerts'
@@ -63,14 +62,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
       icon: Ship,
       badge: null,
       color: 'text-cyan-400',
-    },
-    {
-      id: 'procurement' as ActiveTab,
-      label: 'Cargo & Stockyard',
-      sublabel: 'Procurement & Capacity',
-      icon: Boxes,
-      badge: null,
-      color: 'text-amber-400',
     },
     {
       id: 'landed-cost' as ActiveTab,
