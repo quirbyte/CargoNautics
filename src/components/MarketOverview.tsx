@@ -136,9 +136,12 @@ export const MarketOverview: React.FC<MarketOverviewProps> = ({
       </div>
 
       {/* Index Interactive Chart & Driver Analysis */}
+      {/* Index Interactive Chart & Driver Analysis */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 glass-panel p-5 rounded-2xl">
-          <div className="flex items-center justify-between mb-4">
+        {/* ADDED: flex flex-col to the parent panel */}
+        <div className="lg:col-span-2 glass-panel p-5 rounded-2xl flex flex-col">
+          {/* ADDED: shrink-0 to prevent the header from squishing */}
+          <div className="flex items-center justify-between mb-4 shrink-0">
             <div>
               <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">30-Day Index Trajectory</div>
               <h3 className="text-base font-bold text-white flex items-center gap-2">
@@ -157,7 +160,7 @@ export const MarketOverview: React.FC<MarketOverviewProps> = ({
             </div>
           </div>
 
-          <div className="h-60 w-full">
+          <div className="flex-1 w-full min-h-[240px]">
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={selectedIndex.historical}>
                 <defs>
@@ -189,7 +192,7 @@ export const MarketOverview: React.FC<MarketOverviewProps> = ({
             </ResponsiveContainer>
           </div>
         </div>
-
+        
         {/* Bunker Benchmarks & FX Panel */}
         <div className="space-y-4">
           {/* Bunker Fuel Card */}
