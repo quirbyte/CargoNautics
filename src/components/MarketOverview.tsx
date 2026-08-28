@@ -103,7 +103,7 @@ export const MarketOverview: React.FC<MarketOverviewProps> = ({
                   : 'glass-panel hover:border-navy-700 bg-navy-900/60 hover:bg-navy-850/80'
               }`}
             >
-              <div className="flex items-start justify-between">
+              <div className="flex items-start justify-between relative">
                 <div>
                   <div className="flex items-center gap-1.5">
                     <span className="text-xs font-extrabold text-sky-400 font-mono">{idx.code}</span>
@@ -114,12 +114,14 @@ export const MarketOverview: React.FC<MarketOverviewProps> = ({
                   </div>
                 </div>
 
-                <div className={`flex items-center gap-0.5 text-xs font-bold px-2 py-1 rounded-lg ${
+               <div className='absolute right-0 bottom-0.5'>
+                 <div className={`flex items-center gap-0.5 text-xs font-bold px-2 py-1 rounded-lg ${
                   isPositive ? 'bg-emerald-950/80 text-emerald-400 border border-emerald-800/60' : 'bg-rose-950/80 text-rose-400 border border-rose-800/60'
                 }`}>
                   {isPositive ? <ArrowUpRight className="w-3.5 h-3.5" /> : <ArrowDownRight className="w-3.5 h-3.5" />}
                   <span>{isPositive ? '+' : ''}{idx.change1d} ({Math.abs(idx.change1dPct)}%)</span>
                 </div>
+               </div>
               </div>
 
               {/* 52-Week Gauge */}
