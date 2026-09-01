@@ -390,11 +390,11 @@ export const FreightForecastModule: React.FC<FreightForecastModuleProps> = ({
           </div>
 
           <div className="h-56 w-full">
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="170%">
               <BarChart
                 data={forecast.drivers}
                 layout="vertical"
-                margin={{ left: 40, right: 20 }}
+                margin={{ left: 0, right: 0 }}
               >
                 <XAxis type="number" stroke="#64748b" fontSize={10} tickFormatter={(v) => `${v > 0 ? '+' : ''}$${v}`} />
                 <YAxis type="category" dataKey="name" stroke="#cbd5e1" fontSize={9} width={130} />
