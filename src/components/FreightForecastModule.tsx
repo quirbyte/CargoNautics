@@ -350,7 +350,7 @@ export const FreightForecastModule: React.FC<FreightForecastModuleProps> = ({
                 dataKey="confidenceLow"
                 name="P10 Low Bound"
                 stroke="none"
-                fill="#070f1e"
+                fill="#FFA500"
                 fillOpacity={1}
               />
 
