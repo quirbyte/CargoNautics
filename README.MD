@@ -103,4 +103,4 @@ The dashboard supports role-based views (e.g. **Chartering Analyst**, **Operatio
 
 ## License
 
-No license file is currently present in this repository. Add one (e.g. MIT, Apache-2.0) if you intend to open this project up for reuse or contributions.
+© MIT LICENSE 2026
