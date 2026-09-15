@@ -102,7 +102,7 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Brand & Subtitle */}
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-500 to-blue-700 flex items-center justify-center shadow-lg shadow-sky-500/20 border border-sky-400/30">
-            <Compass className="w-6 h-6 text-white animate-spin-slow" />
+            <img src='../../assets/logo.png' className="w-6 h-6 text-white animate-spin-slow rounded-full" />
           </div>
           <div>
             <div className="flex items-center gap-2">
